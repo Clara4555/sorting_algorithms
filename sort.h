@@ -1,5 +1,25 @@
 #ifndef SORT_H_
-#define SORT_H_
+#define SORT_H
+#include<stddef.h>
+#include <stdio.h>
+#include <stdlib.h>
+#define UP 0
+#define DOWN 1
+
+
+/**
+ * enum bool - Enumeration representing Boolean values.
+ * @False: Represents the value 0.
+ * @True: Represents the value 1.
+ */
+typedef enum bool
+{
+    false = 0,
+    true
+} bool;
+
+
+
 /**
  * struct listint_s - Doubly linked list node
  *
@@ -31,7 +51,7 @@ void heap_sort(int *array, size_t size);
 void radix_sort(int *array, size_t size);
 void bitonic_sort(int *array, size_t size);
 void quick_sort_hoare(int *array, size_t size);
-void sort_deck(deck_node_t **deck);
+
 
 
 #endif
